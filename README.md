@@ -362,7 +362,7 @@ curl -X POST http://localhost:8000/api/ai/analyze \
 
 ## 📝 Notes
 
-- This is a **demonstration prototype** showcasing AI/ML engineering capabilities
+- This project shows AI/ML engineering capabilities
 - The "AI" currently uses heuristics, not actual LLM calls
 - Sample data is fake but realistic
 - Vector embeddings are simplified for demo purposes
