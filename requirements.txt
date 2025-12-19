@@ -1,31 +1,31 @@
 # Core Framework
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-pydantic==2.6.0
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.6.0
 
 # UI
-streamlit==1.31.0
+streamlit>=1.31.0
 
-# AI/ML
-openai==1.12.0
-numpy==1.26.4
-scikit-learn==1.4.0
-sentence-transformers==2.3.1
+# AI/ML (optional - not required for demo)
+# openai>=1.12.0
+numpy>=1.26.4
+# scikit-learn>=1.4.0
+# sentence-transformers>=2.3.1
 
-# Vector Store
-chromadb==0.4.22
-faiss-cpu==1.7.4
+# Vector Store (optional - not required for demo)
+# chromadb>=0.4.22
+# faiss-cpu>=1.8.0
 
-# LLM Framework
-langchain==0.1.6
-langchain-openai==0.0.5
-langchain-community==0.0.17
+# LLM Framework (optional - not required for demo)
+# langchain>=0.1.6
+# langchain-openai>=0.0.5
+# langchain-community>=0.0.17
 
 # Utilities
-python-dotenv==1.0.1
-httpx==0.26.0
-rich==13.7.0
-tenacity==8.2.3
+python-dotenv>=1.0.1
+httpx>=0.26.0
+# rich>=13.7.0
+tenacity>=8.2.3
 
 # Date handling
-python-dateutil==2.8.2
+python-dateutil>=2.8.2

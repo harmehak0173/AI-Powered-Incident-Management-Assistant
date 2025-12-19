@@ -167,8 +167,8 @@ def format_time_ago(dt: datetime) -> str:
 
 def render_sidebar():
     """Render the sidebar with incident list"""
-    st.sidebar.markdown("## 🛡️ **Rootly AI**")
-    st.sidebar.markdown("*Reliability Assistant*")
+    st.sidebar.markdown("## 🛡️ **Incident AI**")
+    st.sidebar.markdown("*Intelligent Response Assistant*")
     st.sidebar.markdown("---")
     
     # Filter options

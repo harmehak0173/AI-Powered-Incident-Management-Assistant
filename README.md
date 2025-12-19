@@ -1,8 +1,6 @@
-# 🛡️ AI-Powered Incident Management Assistant
+# 🛡️ AI-Powered Incident Management System
 
-> **A production-ready Python prototype demonstrating RAG-based AI capabilities for incident response**
-> 
-> Built for the **Senior AI Engineer** role at [Rootly](https://rootly.com/)
+> **An intelligent incident response platform using RAG (Retrieval Augmented Generation) and AI agents**
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.109-green)
@@ -110,8 +108,8 @@ Similarity("Payment failed", "Database slow") = 0.30 (not similar)
 
 ## 📁 Project Structure
 
-```python
-Rootly/
+```
+incident-management-ai/
 │
 ├── app.py                    # MAIN UI - Streamlit dashboard (START HERE)
 ├── requirements.txt          # Python dependencies
@@ -133,7 +131,7 @@ Rootly/
 │
 ├── data/                     # SAMPLE DATA
 │   ├── __init__.py
-│   └── seed_data.py         # Fake incidents, playbooks, deployments
+│   └── seed_data.py         # Sample incidents, playbooks, deployments
 │
 └── venv/                     # Python virtual environment (created on setup)
 ```
@@ -156,40 +154,45 @@ Rootly/
 
 ### First Time Setup
 
-```powershell
-# Navigate to project folder
-cd c:\Users\harme\OneDrive\Desktop\Rootly
+```bash
+# Clone the repository
+git clone https://github.com/harmehak0173/incident-management-ai.git
+cd incident-management-ai
 
-# Create virtual environment (isolates dependencies)
+# Create virtual environment
 python -m venv venv
 
 # Activate virtual environment
+# On Windows:
 .\venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
 
-# Install all dependencies
+# Install dependencies
 pip install -r requirements.txt
 ```
 
 ### Running the Application
 
 #### Option 1: Streamlit UI (Recommended)
-```powershell
-# Make sure you're in the project folder and venv is activated
-cd c:\Users\harme\OneDrive\Desktop\Rootly
-.\venv\Scripts\activate
+```bash
+# Activate virtual environment
+.\venv\Scripts\activate  # Windows
+source venv/bin/activate  # macOS/Linux
 
 # Run Streamlit
-.\venv\Scripts\streamlit run app.py --server.headless true
+streamlit run app.py
 ```
 Then open http://localhost:8501 in your browser.
 
 #### Option 2: FastAPI Backend Only
-```powershell
-cd c:\Users\harme\OneDrive\Desktop\Rootly
-.\venv\Scripts\activate
+```bash
+# Activate virtual environment
+.\venv\Scripts\activate  # Windows
+source venv/bin/activate  # macOS/Linux
 
 # Run FastAPI server
-.\venv\Scripts\python -m uvicorn api.main:app --reload --port 8000
+python -m uvicorn api.main:app --reload --port 8000
 ```
 API docs at http://localhost:8000/docs
 
@@ -359,11 +362,27 @@ curl -X POST http://localhost:8000/api/ai/analyze \
 
 ## 📝 Notes
 
-- This is a **demonstration prototype**, not production-ready code
+- This is a **demonstration prototype** showcasing AI/ML engineering capabilities
 - The "AI" currently uses heuristics, not actual LLM calls
 - Sample data is fake but realistic
 - Vector embeddings are simplified for demo purposes
+- Ready for integration with real LLMs (OpenAI, Claude, etc.)
 
 ---
 
-*Built for Rootly AI Engineer application* 🚀
+## 📄 License
+
+MIT License - feel free to use this project for learning or as a foundation for your own incident management system.
+
+---
+
+## 👨‍💻 Author
+
+Built by **Harmehak Singh Khangura** to demonstrate expertise in:
+- RAG-based AI systems
+- Vector embeddings and semantic search
+- AI agent development
+- Production-ready Python engineering
+- FastAPI and Streamlit
+
+---
