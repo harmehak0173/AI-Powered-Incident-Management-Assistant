@@ -156,8 +156,8 @@ incident-management-ai/
 
 ```bash
 # Clone the repository
-git clone https://github.com/harmehak0173/incident-management-ai.git
-cd incident-management-ai
+git clone https://github.com/harmehak0173/AI-Powered-Incident-Management-Assistant.git
+cd AI-Powered-Incident-Management-Assistant
 
 # Create virtual environment
 python -m venv venv
